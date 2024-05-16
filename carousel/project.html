@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <title>探視計畫</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet" />
+    <link href="project.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <script id="replace_with_navbar" src="nav.js"></script>
+    
+    <!-- container -->
+    <div class="container"> 
+        <div class="bg-light p-5 rounded mt-3">
+            <h3>基本資料</h3>
+            <hr>
+            <p>· 甲方：</p>
+            <p>· 乙方：</p>
+            <p>選擇未成年子女：</p>
+            <p>可以個別規劃或共同規劃</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  張小妹
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  張小弟
+                </label>
+            </div>
+          </div>
+
+
+        <!-- TAB CONTROLLERS -->
+        <input id="panel-1-ctrl"
+        class="panel-radios" type="radio" name="tab-radios" checked>
+        <input id="panel-2-ctrl"
+        class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-3-ctrl"
+        class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-4-ctrl"
+        class="panel-radios" type="radio" name="tab-radios">
+        <input id="panel-5-ctrl"
+        class="panel-radios" type="radio" name="tab-radios">
+        <input id="nav-ctrl"
+        class="panel-radios" type="checkbox" name="nav-checkbox">
+
+
+        <!-- TABS LIST -->
+        <ul id="tabs-list">
+        <!-- MENU TOGGLE -->
+        <label id="open-nav-label" for="nav-ctrl"></label>
+        <li id="li-for-panel-1">
+        <label class="panel-label"
+              for="panel-1-ctrl">親權</label>
+        </li><!--INLINE-BLOCK FIX
+        --><li id="li-for-panel-2">
+        <label class="panel-label"
+              for="panel-2-ctrl">探視計畫</label>
+        </li><!--INLINE-BLOCK FIX
+        --><li id="li-for-panel-3">
+        <label class="panel-label"
+              for="panel-3-ctrl">扶養費</label>
+        </li>
+        <label id="close-nav-label" for="nav-ctrl">Close</label>
+        </ul>
+
+        <!-- THE PANELS -->
+        <article id="panels">
+          <div class="container">
+            <!-- 親權 -->
+            <section id="panel-1">
+            <main>
+            <h5>權利義務約定：</h5>
+            <p class="name">張小妹</p>
+            <div class="area">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Radio_CareParent" id="Radio_CareParent">
+                <label class="form-check-label" for="Radio_CareParent">
+                  單獨扶養
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radio_CareChild" id="Radio_A">
+                  <label class="form-check-label" for="Radio_A">
+                    甲方
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radio_CareChild" id="Radio_B">
+                  <label class="form-check-label" for="Radio_B">
+                    乙方
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="area">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Radio_CareParent" id="Radio_JintCustodyParent">
+                <label class="form-check-label" for="Radio_JintCustodyParent">
+                  共同監護
+                </label>
+                <br/>
+                <label class="areaLabel">主要照顧者：</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radio_JintCustodyChild" id="Radio_C">
+                  <label class="form-check-label" for="Radio_C">
+                    甲方
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Radio_JintCustodyChild" id="Radio_D">
+                  <label class="form-check-label" for="Radio_D">
+                    乙方
+                  </label>
+                </div>
+
+                <label class="areaLabel">主要照顧者單獨行使條件(複選)：</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Study">
+                  <label class="form-check-label" for="Check_Study">
+                    就學
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Migrant">
+                  <label class="form-check-label" for="Check_Migrant">
+                    移民
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Marry">
+                  <label class="form-check-label" for="Check_Marry">
+                    結婚
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Move">
+                  <label class="form-check-label" for="Check_Move">
+                    遷戶籍
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Operation">
+                  <label class="form-check-label" for="Check_Operation">
+                    手術
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Medical">
+                  <label class="form-check-label" for="Check_Medical">
+                    醫療
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Travel">
+                  <label class="form-check-label" for="Check_Travel">
+                    出國旅遊
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_StudyAbroad">
+                  <label class="form-check-label" for="Check_StudyAbroad">
+                    留學
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Check_Other">
+                  <label class="form-check-label" for="Check_Other">
+                    其他自填
+                  </label>
+                  <input type="text" class="form-control"/>
+                </div>
+
+                
+
+              </div>
+              
+
+            </div>
+
+
+            
+            <!-- <p>In this demo, <code>labels</code> for hidden <code>radios</code> toggle the content. This is based on the behavior in which clicked <code>labels</code> for a <code>radio</code> or <code>checkbox</code> input will check that <code>input</code>.</p> 
+            <pre>&lt;input id="radio-1" type="radio" name="demo-radios"&gt;
+            &lt;input id="radio-2" type="radio" name="demo-radios"&gt;</pre>
+            #radio-1: <input id="radio-1" type="radio" name="demo-radios"> #radio-2: <input id="radio-2" type="radio" name="demo-radios">
+            <pre>&lt;label for="radio-1"&gt;Toggle #radio-1&lt;/label&gt;
+            &lt;label for="radio-2"&gt;Toggle #radio-2&lt;/label&gt;</pre>
+            <label for="radio-1" class="demo-label">Toggle #radio-1</label>
+            <label for="radio-2" class="demo-label">Toggle #radio-2</label>
+            <p>Click one of the labels above and see its effect on the radios above it.</p>
+            <p>The radios for this pen's tabs are displayed semi-transparently at the top of this demo page.</p> -->
+            </main>
+            </section>
+            <!-- 探視計畫 -->
+            <section id="panel-2">
+            <main>
+            <h1>Input :checked</h1>
+            <p>In CSS, you can query based on the <code>:checked</code> selector for <code>radios</code> and <code>checkboxes</code> to style siblings down the DOM scope. To do this, we can use the <code>~</code>. It will select same-level siblings after the given selector. Because the tab <code>labels</code> in this demo are nested and not immediate siblings, we will need to select their topmost parent that is at the same level as our <code>input</code>.</p>
+            <p>To demonstrate, we will do a simplified version of this with a checkbox:</p>
+            <pre><strong>&lt;!-- invisible input and its label --&gt;</strong>
+            &lt;input id="demo-child-toggle" type="checkbox"&gt;
+            &lt;label for="demo-child-toggle"&gt;Toggle #demo-child&lt;/label&gt;
+
+            <strong>&lt;-- parent to select first via "~" --&gt;</strong>
+            &lt;div id="demo-parent"&gt;
+            <strong>&lt;-- child to select through parent --&gt;</strong>
+            &lt;div id="demo-child"&gt;#demo-child&lt;/div&gt;
+            &lt;/div&gt;</pre>
+            <p>and in our CSS:</p>
+            <pre><strong>/* hiding our checkbox */</strong>
+            #demo-child-toggle {
+            display: none;  
+            }
+            <strong>/* selecting the child */</strong>
+            #demo-child-toggle:checked ~ #demo-parent #demo-child {
+            color: #c0392b;
+            font-weight: bold;
+            text-transform: uppercase;
+            }</pre>
+            <hr>
+            <input id="demo-child-toggle" type="checkbox">
+            <label class="demo-label" for="demo-child-toggle">Toggle #demo-child</label>
+            <div id="demo-parent">
+              <div id="demo-child">#demo-child</div>
+            </div>
+            <hr>
+            <p>As you can see, we can control the style of content that comes after a hidden input by toggling it via its label.</p>
+            <p>At this point you can probably get the picture for how we can conditionally display the tabbed panel content in this pen.</p>
+            </main>
+            </section>
+            <!-- 扶養費 -->
+            <section id="panel-3">
+            <main>
+            <h1>The Tabs</h1>
+            <p>Here is the basic form of a tab in this demo:</p>
+            <pre>&lt;li id="li-for-panel-1"&gt;
+            &lt;label class="panel-label" for="panel-1-ctrl"&gt;CSS Radio Toggles&lt;/label&gt;
+            &lt;/li&gt;</pre>
+            <p>For the "active" tab to cover the bottom border, the child <code>label</code> gets an additional 2 pixels of <code>padding-top</code> while its parent <code>li</code> gets a <code>translateY(1px)</code>. This not only covers the bottom border, but gives an ever-so-subtle "moving toward you" effect by shifting the title down <code>1px</code>.</p>
+            
+            <pre>#panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
+            transform: translate3d(0, 1px, 0);
+            }
+            #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
+            padding-top: 26px; <strong>/* instead of "24px" */</strong>
+            }</pre>
+            </main>
+            </section>
+
+
+          </div>
+        </article>
+
+
+
+
+<!-- FOOTER -->
+<footer class="container">
+  <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+<p style="font-size: 14px;">
+  &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+  <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+</p>
+</footer>
+
+
+  </body>
+
+
+</html>
