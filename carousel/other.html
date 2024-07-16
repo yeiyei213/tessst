@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.83.1" />
+  <title>分居或離婚子女照顧計畫產生器</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet" />
+  <link href="project.css" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--Navigation bar-->
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <script src="other.js"></script>
+  <!-- container -->
+  <div class="container" style="font-size: 18px;">
+    <div class="bg-light p-5 rounded mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" style="color:#cc0404">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">其他協議</li>
+        </ol>
+      </nav>
+      <h3>基本資料</h3>
+      <hr>
+      <p>· 甲方：<span class="A" style="color:black"></span>&emsp;(<span class="titleA" style="color:black"></span>)</p>
+      <p>· 乙方：<span class="B" style="color:black"></span>&emsp;(<span class="titleB" style="color:black"></span>)</p>
+    </div>
+
+    <div class="area">
+      <label>如：約定辦理離婚登記時間、約定延遲違約金、寵物照顧等協議。</label>
+    </div>
+    <div class="area">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Radio_AgreedContent" id="Radio_AgreedContent_YES">
+        <label class="form-check-label" for="Radio_AgreedContent_YES">
+          約定內容如下
+        </label>
+        <textarea class="form-control" id="Radio_AgreedContent_content" rows="7"
+          placeholder="範例：甲方同意於X年X月X日起，每月支付乙方8,000元，至X年X月X日止，共計400,000元。"></textarea>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Radio_AgreedContent" id="Radio_AgreedContent_NO">
+        <label class="form-check-label" for="Radio_AgreedContent_NO">
+          不約定。
+        </label>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-outline-success" onclick="saveOtherData();updateSummary();">儲存</button>
+      <!--onclick="changeTab('panel-3-ctrl')"-->
+    </div>
+    <br>
+    <div id="summary_Area" class="summaryArea" style="visibility: hidden;">
+      <div id="summary_Title">
+        <label>小結語</label>
+      </div>
+      <p id="All_Summary"></p>
+    </div>
+  </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+    <p style="font-size: 10px;bottom:0;">
+      &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+      <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    </p>
+  </footer>
+
+  <p style="bottom: 0;left:0;color: rgb(253, 252, 252)">喜 (灬ºωº灬)</p>
+</body>
+
+</html>

@@ -1,240 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.83.1" />
-    <title>分居或離婚子女照顧計畫產生器</title>
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.83.1" />
+  <title>分居或離婚子女照顧計畫產生器</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet" />
+</head>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <img
-            src="https://www.children.org.tw/asset/c_21_058_main/img/logo/logo_color_2x.png"
-            height="30px"
-          />
-          <a class="navbar-brand" href="index.html"
-            >分居或離婚子女照顧計畫產生器</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="quiz.html"
-                  >婚姻溫度計</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">接續填寫</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >小叮嚀</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">親權</a></li>
-                  <li><a class="dropdown-item" href="#">探視</a></li>
-                  <li><a class="dropdown-item" href="#">撫養</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >相關資源</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"></div>
+    <div class="tips" style="position: fixed;background-color: rgb(221, 231, 245); width: 100%; top: 6.1%;color: black;text-align: center;font-size: 18px;letter-spacing: 1px;">本網站服務僅限有子女者使用。若您已經使用過本網提供的服務，可以選擇<a href="project.html" style="color: rgb(196, 11, 11);">接續填寫</a>。</div>
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4" style="padding: 40px; background-color: #d1b3c4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+          <h2 style="padding-bottom: 15px">親權</h2>
+          <!-- 「對未成年子女權利與義務之行使負擔」，在實務上，須留意監護權不是父母的權利，而是對孩子須承擔的責任與義務，故在討論監護權歸屬時，須以「子女最佳利益」為原則。 -->
+          <p>
+            民法1084條明文規定，父母因身分關係所生之權利義務，有不可分離之關係，並含有禁止拋棄之性質，故父母不得拋棄其親權。因此，即便未取得監護權之一方，親權是父母基於其身分，對於未成年子女皆有保護教養的權利與義務。<br>(取自：全國法規資料庫)
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="project.html">前往填寫 &raquo;</a>
+          </p>
         </div>
-      </nav>
-    </header>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="padding: 40px">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
 
-    <main>
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"></div>
-
-      <!-- Marketing messaging and featurettes
-  ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div
-            class="col-lg-4"
-            style="padding: 50px; background-color: #d1b3c4"
-          >
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">親權</h2>
-            <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4" style="padding: 50px">
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">探視計畫</h2>
-            <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div
-            class="col-lg-4"
-            style="padding: 50px; background-color: #d1b3c4"
-          >
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">扶養費</h2>
-            <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-
-          <div class="col-lg-4" style="padding: 50px">
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">夫妻財產</h2>
-            <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-
-          <div
-            class="col-lg-4"
-            style="padding: 50px; background-color: #d1b3c4"
-          >
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">其他協議</h2>
-            <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-
-          <div class="col-lg-4" style="padding: 50px">
-            <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-
-            <h2 style="padding-bottom: 15px">預覽全文</h2>
-            <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
+          <h2 style="padding-bottom: 15px">探視計畫</h2>
+          <!-- 為了維護子女最佳利益，應讓孩子與未同住父母維持密切聯繫並保持良好互動關係，因為探視權不僅是父母的權利，更是孩子的權利。 -->
+          <p>
+            民法1055條之1的「友善父母」條款及兒童權利公約第9條「兒童保有不與雙親分離」的權利，均強調為了維護子女最佳利益，應讓孩子與未同住父母維持密切聯繫並保持良好互動關係。
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="project.html">前往填寫 &raquo;</a>
+          </p>
         </div>
-        <!-- /.row -->
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="padding: 40px; background-color: #d1b3c4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
 
-        <!-- START THE FEATURETTES -->
+          <h2 style="padding-bottom: 15px">扶養費</h2>
+          <!-- 父母對於未成年子女，有保護、教養、扶養之權利義務，且不因結婚經撤銷或離婚而受影響，扶養義務與監護權歸屬無關，父母雙方均須共同分擔孩子扶養費直到成年18歲。 -->
+          <p>
+            民法第1116條之2規定：「父母對於未成年子女之扶養義務，不因結婚經撤銷或離婚而受影響。」 扶養義務與監護權歸屬無關，父母雙方須共同分擔孩子扶養費最少到18歲。
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="project.html">前往填寫 &raquo;</a>
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
 
-        <!-- /END THE FEATURETTES -->
+        <div class="col-lg-4" style="padding: 40px">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+          <h2 style="padding-bottom: 15px">夫妻財產</h2>
+          <!-- 夫妻財產分為法定財產及約定財產，若未約定，自動適用法定財產制，所謂法定財產制是指就婚前或婚後之財產，夫妻各自擁有、管理、處分與收益，離婚時，夫或妻可就婚後財產主張剩餘財產差額分配請求權。 -->
+          <p>
+            依據民法第1058條前段規定，夫妻離婚時，除採用分別財產制者外，各自取回其結婚或變更夫妻財產制時之財產。然而，婚姻關係存續中，夫妻雙方對於彼此財產之增加均有貢獻，在夫妻各自取回財產後，尚有財產分配的問題。至於財產的分配，除了「分別財產制」夫妻財產自始即完全分離外，夫妻財產之分配會因不同的夫妻財產制而有所不同。<br>(取自：全國法規資料庫)
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="property.html">前往填寫 &raquo;</a>
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-4" style="padding: 40px; background-color: #d1b3c4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+          <h2 style="padding-bottom: 15px">其他協議</h2>
+          <p>
+            如：寵物照顧協議、約定辦理離婚登記時間、約定延遲違約金協議。
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="other.html">前往填寫 &raquo;</a>
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-4" style="padding: 40px">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+
+          <h2 style="padding-bottom: 15px">預覽全文</h2>
+          <p>
+            可預覽並列印已填寫完成之計畫。
+          </p>
+          <p>
+            <a class="btn btn-secondary" href="preview.html">前往填寫 &raquo;</a>
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
       </div>
-      <!-- /.container -->
+      <!-- /.row -->
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; 2017–2021 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-        </p>
-      </footer>
-    </main>
+      <!-- START THE FEATURETTES -->
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <!-- /END THE FEATURETTES -->
+    </div>
+    <!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+      <p style="font-size: 10px;">
+        &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+        <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+      </p>
+    </footer>
+  </main>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
 </html>

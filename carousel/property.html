@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.83.1" />
+  <title>分居或離婚子女照顧計畫產生器</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet" />
+  <link href="project.css" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--Navigation bar-->
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <script src="property.js"></script>
+  <!-- container -->
+  <div class="container" style="font-size: 18px;">
+    <div class="bg-light p-5 rounded mt-3">
+      <nav aria-label="breadcrumb" style="position: relative;">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" style="color:#cc0404">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page">夫妻財產</li>
+        </ol>
+      </nav>
+      <h3>基本資料</h3>
+      <hr>
+      <p>· 甲方：<span class="A" style="color:black"></span>&emsp;(<span class="titleA" style="color:black"></span>)</p>
+      <p>· 乙方：<span class="B" style="color:black"></span>&emsp;(<span class="titleB" style="color:black"></span>)</p>
+    </div>
+
+    <div class="area">
+      <label>夫妻剩餘財產分配方式。</label>
+    </div>
+    <div class="area">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Radio_AgreedContent" id="Radio_AgreedContent_YES">
+        <label class="form-check-label" for="Radio_AgreedContent_YES">
+          依法定財產制進行剩餘財產分配：
+          <br>
+          <p>
+            &emsp;夫妻如果之前沒有特別約定，那麼離婚時依據民法1030-1條規定，如雙方各自現有名下之各類財產扣除負債、婚前財產、繼承、贈與或慰撫金後，剩餘的部分，較少一方的配偶可以請求二分之一。
+            <br>
+            &emsp;例如：先生有500萬財產，扣除100萬繼承來的與50萬的婚前財產，剩下350萬為剩餘財產；太太有750萬財產，扣除接受贈與200萬與婚前財產100萬，那太太的剩餘財產是450萬，450萬減350萬差額為100萬，先生可以跟太太要求二分之一即五十萬。 
+          </p>
+        </label>
+        <textarea class="form-control" id="Radio_AgreedContent_content" rows="10"
+          placeholder="">範例1：(一次性給付)由(甲/乙)方以(匯款/其他)，一次性於(民國幾年幾月幾日)前完成支付(甲/乙)方，共計(填金額)元。
+
+範例2：(分期給付)由(甲/乙)方以(匯款/其他)，於每月(幾)日以前，分期支付(甲/乙)方(填金額)元。
+
+其他(如：辦理過戶登記日期等)
+        </textarea>
+      </div>
+      <br>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Radio_AgreedContent" id="Radio_AgreedContent_NO">
+        <label class="form-check-label" for="Radio_AgreedContent_NO">
+          雙方已經由法院約定財產制，不於此討論。
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="Radio_AgreedContent" id="Check_WaiveRights">
+        <label class="form-check-label" for="Check_WaiveRights">
+          雙方同意於離婚時，相互放棄民法第1030-1條剩餘財產分配請求之權利。
+        </label>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2 d-md-block">
+      <button type="button" class="btn btn-outline-success" onclick="savePropertyData();updateSummary();">儲存</button>
+      <!--onclick="changeTab('panel-3-ctrl')"-->
+    </div>
+    <br>
+    <div id="summary_Area" class="summaryArea" style="visibility: hidden;">
+      <div id="summary_Title">
+        <label>小結語</label>
+      </div>
+      <p id="All_Summary"></p>
+    </div>
+  </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="container">
+    <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+    <p style="font-size: 10px;bottom:0;">
+      &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+      <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    </p>
+  </footer>
+
+
+  <p style="bottom: 0;left:0;color: rgb(253, 252, 252)">¯\_(ツ)_/¯</p>
+</body>
+
+</html>

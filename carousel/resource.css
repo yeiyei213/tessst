@@ -1,0 +1,15 @@
+.btn-secondary {
+  background-color: rgb(202, 176, 191);
+  border-color: rgb(201, 178, 191);
+  border-radius: 2px;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+
+.decorator {
+  width: 20px;
+  height: 40px;
+  background-color: rgb(219, 154, 192);
+  margin-right: 10px;
+}

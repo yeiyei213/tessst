@@ -1,0 +1,86 @@
+p {
+  font-size: 20px;
+}
+
+.childs {
+  margin-bottom: 0;
+}
+
+#button {
+  display: inline-block;
+  background-color: #fc999b;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+ol li {
+  padding: 5px;
+  color: #000;
+  font-size: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container button {
+  background-color: #fc999b;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 15px;
+  width: 304px;
+  height: 40px;
+  border: 1px solid rgb(189, 188, 188);
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .button-container {
+      flex-direction: row;
+  }
+
+  .button-container button {
+      margin-top: 0;
+      width: auto;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#delete-button {
+  color: #93898D;
+  margin-right: 10px;
+  float: right;
+  position: relative;
+}
+
+.tips{
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+input{
+  border: rgb(173, 172, 172) 1px solid;
+  border-radius: 5%;
+}

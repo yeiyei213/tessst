@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分居或離婚子女照顧計畫產生器</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee|Josefin+Sans:300,600&amp;display=swap">
+    <link href="carousel.css" rel="stylesheet">
+    <link href="info.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="info.js"></script>
+    <script id="replace_with_navbar" src="nav.js"></script>
+    <div class="tips" style="background-color: rgb(221, 231, 245); width: 100%; margin-top: 0.5%;">
+        本網站服務僅限有子女者使用。若您已經使用過本網提供的服務，可以選擇<a href="project.html" style="color: rgb(196, 11, 11);">接續填寫</a>。</div>
+    <div class="container">
+        <div class="bg-light p-5 rounded mt-3">
+            <h3>基本資料填寫</h3>
+            <hr>
+            <!--<p id="writer">· 填寫人姓名：<input name="writer" /></p>-->
+            <!--<p class="writer-email">· 填寫人email：<input name="writer-email" /></p>-->
+            <p class="A">· 甲方姓名：<input name="A" placeholder="必填"/></p>
+            <p class="titleA">· 暱稱：<input name="titleA" placeholder="如：爸爸/媽媽"/></p><br>
+            <hr>
+            <p class="B">· 乙方姓名：<input name="B" placeholder="必填"/></p>
+            <p class="titleB">· 暱稱：<input name="titleB" placeholder="如:爸比/媽咪"/></p><br>
+            <hr>
+            <p class="childs">· 未成年子女：</p>
+            <input type="text" name="ListItem" placeholder="必填"/>
+            <div id="button">新增</div><br />
+            <ol id="ol_list"></ol>
+            <div class="button-container">
+                <button class="confirm" onclick="saveToLocalStorage()">確認送出</button>
+                <button class="clear" onclick="cleanstring()"
+                    style="background-color: rgb(141, 137, 137);">清除基本資料</button>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container">
+        <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+        <p style="font-size: 10px;bottom:0;">
+            &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+            <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+        </p>
+    </footer>
+</body>
+
+</html>

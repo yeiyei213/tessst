@@ -1,151 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
-    <title>quiz</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
+  <title>分居或離婚子女照顧計畫產生器</title>
 
-    
-    
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="quiz.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-    
-  </head>
-  <body>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <img src="https://www.children.org.tw/asset/c_21_058_main/img/logo/logo_color_2x.png" height="30px"/>
-          <a class="navbar-brand" href="index.html">分居或離婚子女照顧計畫產生器</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="quiz.html">婚姻溫度計</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">接續填寫</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">小叮嚀</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">親權</a></li>
-                  <li><a class="dropdown-item" href="#">探視</a></li>
-                  <li><a class="dropdown-item" href="#">撫養</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">相關資源</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
 
 
-<div class="container">  
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="quiz.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <script src="quiz.js"></script>
+
+  <div class="container">
+    <div class="reminder1"><p class="con0">如果您已經使用過本網提供的服務，可以至選單中選擇<a href="info.html" style="color:rgb(201, 0, 0); font-weight: bold;;" class="con">接續填寫</a>。</p>本網站服務僅限有子女者使用。
+      在您決定離婚前請審慎完成以下自我評估，建議您依照評估結果確認是否要繼續填寫資料，或尋求婚姻諮商。</div>
     <form class="quiz">
       <div class="quiz__inner">
-      <div data-question="1" class="quiz__step--1 quiz__step--current quiz__step">
-        <div class="question__emoji">💔 </div>
-        <h1 class="quiz__question">確定要離婚?</h1>
-        <div class="answer">
-          <input data-char="65" class="answer__input" type="radio" id="smoke_yes" name="smoke" value="Yes">
-          <label  class="answer__label" for="smoke_yes">Yes</label>
+        <div data-question="1" class="quiz__step--1 quiz__step--current quiz__step">
+          <div class="question__emoji">Q1</div>
+          <h1 class="quiz__question">我目前有離婚意願</h1>
+          <div class="answer">
+            <input data-char="65" class="answer__input" type="radio" id="smoke_yes" name="smoke" value="是">
+            <label class="answer__label" for="smoke_yes">是</label>
+          </div>
+          <div class="answer">
+            <input data-char="66" class="answer__input" type="radio" id="smoke_no" name="smoke" value="否">
+            <label class="answer__label" for="smoke_no">否</label>
+          </div>
         </div>
-        <div class="answer">
-          <input data-char="66" class="answer__input" type="radio" id="smoke_no" name="smoke" value="No">
-          <label class="answer__label" for="smoke_no">No</label>
-        </div>       
-      </div>
-  <div data-question="2" class="quiz__step--2 quiz__step">
-    <div class="question__emoji">👩‍👧‍👦</div>
-        <h1 class="quiz__question">做好準備了?</h1>
-        <div class="answer">
-          <input  class="answer__input" type="radio" id="pizza_yes" name="pizza" value="Yes">
-          <label  class="answer__label" for="pizza_yes">Yes</label>
+        <div data-question="2" class="quiz__step--2 quiz__step">
+          <div class="question__emoji">Q2</div>
+          <h1 class="quiz__question">我已思考過離婚後子女照顧</h1>
+          <div class="answer">
+            <input class="answer__input" type="radio" id="pizza_yes" name="pizza" value="是">
+            <label class="answer__label" for="pizza_yes">是</label>
+          </div>
+          <div class="answer">
+            <input class="answer__input" type="radio" id="pizza_no" name="pizza" value="否">
+            <label class="answer__label" for="pizza_no">否<div class="answer__tick">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
+                </svg>
+              </div></label>
+          </div>
         </div>
-        <div class="answer">
-          <input class="answer__input" type="radio" id="pizza_no" name="pizza" value="No">
-          <label class="answer__label" for="pizza_no">No<div class="answer__tick">
-      <svg width="14" height="14" viewBox="0 0 24 24">
-          <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
-      </svg>
-  </div></label>
-        </div>       
-      </div>
-  <div data-question="3" class="quiz__step--3 quiz__step">
-    <div class="question__emoji">💸</div>
-        <h1 class="quiz__question">再也不後悔?</h1>
-        <div class="answer">
-          <input  class="answer__input" type="radio" id="aliens_yes" name="aliens" value="Yes">
-          <label  class="answer__label" for="aliens_yes">Yes</label>
+        <div data-question="3" class="quiz__step--3 quiz__step">
+          <div class="question__emoji">Q3</div>
+          <h1 class="quiz__question">我可以在理性思考下完成</h1>
+          <div class="answer">
+            <input class="answer__input" type="radio" id="aliens_yes" name="aliens" value="是">
+            <label class="answer__label" for="aliens_yes">是</label>
+          </div>
+          <div class="answer">
+            <input class="answer__input" type="radio" id="aliens_no" name="aliens" value="否">
+            <label class="answer__label" for="aliens_no">否<div class="answer__tick">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
+                </svg>
+              </div></label>
+          </div>
+
         </div>
-        <div class="answer">
-          <input class="answer__input" type="radio" id="aliens_no" name="aliens" value="No">
-          <label class="answer__label" for="aliens_no">No<div class="answer__tick">
-      <svg width="14" height="14" viewBox="0 0 24 24">
-          <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path>
-      </svg>
-  </div></label>
-        </div> 
-       
-      </div>
-  <div data-question="4" class="quiz__step--4 quiz__step quiz__summary">
-    
-        <h1 class="quiz__question">Summary</h1>
-    <div id="summary"></div>
-                <div class="submit__container">
-        <a href="#" class="submit">Submit</a>
-      </div> 
-      </div>
+        <div data-question="4" class="quiz__step--4 quiz__step quiz__summary">
+
+          <h1 class="quiz__question">確認選擇</h1>
+          <div id="summary"></div>
+          <div class="submit__container">
+            <a href="#" class="submit">提交</a>
+          </div>
         </div>
+      </div>
     </form>
   </div>
-  
+
   <footer class="bottom">
     <section class="bottom__container">
       <div class="progress">
-      <div class="progress__inner"></div>
-    </div>
-    <div class="navigation">
-      <div class="navigation__btn navigation__btn--left"><svg width="20" height="20" viewBox="0 0 24 24">
-      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-  </svg></div>
-      <div class="navigation__btn navigation__btn--right"><svg width="20" height="20" viewBox="0 0 24 24">
-    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-  </svg></div>
-    </div>
-    </section>  
+        <div class="progress__inner"></div>
+      </div>
+      <div class="navigation">
+        <div class="navigation__btn navigation__btn--left"><svg width="20" height="20" viewBox="0 0 24 24">
+            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+          </svg></div>
+        <div class="navigation__btn navigation__btn--right"><svg width="20" height="20" viewBox="0 0 24 24">
+            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+          </svg></div>
+      </div>
+    </section>
   </footer>
 
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="quiz.js"></script>
-  
+  <!-- FOOTER -->
+  <!--<footer class="container1"> -->
+    <!--<p class="float-end"><a href="#">Back to top</a></p> -->
+    <!--<p style="font-size: 14px;">
+      &copy; Child Welfare League Foundation, R.O.C. All Reserved. &middot;
+      <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    <!--</p>
+  </footer>-->
 </body>
+
+<script>
+  // 如果不是都回答yes就看不到接續填寫的提示
+  document.addEventListener('DOMContentLoaded', function () {
+      let storedObject = JSON.parse(localStorage.getItem('TestAnswerObject'));
+      if (!storedObject ||
+          storedObject.Evaluate.isQ1 !== "Yes" ||
+          storedObject.Evaluate.isQ2 !== "Yes" ||
+          storedObject.Evaluate.isQ3 !== "Yes") {
+        const element = document.querySelector('.con0');
+        if (element) {
+          element.remove();
+        }
+      }
+    });
+</script>
 </html>

@@ -27,10 +27,14 @@ body {
 }
 
 .navbar-dark .navbar-brand{
-  color: #735D78;
-  padding-left: 10px;
+  color: #272932;
+  padding-left: 5px;
   font-weight: bold;
   font-size: 22px;
+}
+
+.navbar-toggler{
+  padding: 3px;
 }
 
 /* Declare heights because of positioning of img element */
